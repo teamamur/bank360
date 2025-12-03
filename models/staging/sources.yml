@@ -1,0 +1,10 @@
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: customers
+      - name: accounts
+      - name: branch
+      - name: transactions
+      - name: loan
+      - name: credit_card
