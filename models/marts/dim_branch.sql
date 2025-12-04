@@ -16,7 +16,7 @@ select
     CASE
     WHEN LEAD (UPDATED_AT) OVER (PARTITION BY branch_ID ORDER BY UPDATED_AT) IS NULL THEN TRUE ELSE FALSE
     END AS IS_ACTIVE
-
+    
 FROM  {{ ref('int_branch') }}
 
     )
