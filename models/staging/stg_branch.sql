@@ -1,1 +1,8 @@
-SELECT * FROM {{ source('raw','branch') }};
+with branch as (
+    select
+        *
+    from {{ source('raw', 'branch') }}
+)
+
+select *
+from branch

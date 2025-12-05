@@ -1,5 +1,6 @@
 sources:
   - name: raw
+    database: sourcedb
     schema: raw
     tables:
       - name: customers
@@ -7,4 +8,5 @@ sources:
       - name: branch
       - name: transactions
       - name: loan
-      - name: credit_card
+      - name: cards
+      - name: dates

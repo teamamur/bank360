@@ -1,0 +1,16 @@
+models:
+  - name: int_customer
+    description: Table with all the regions
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+      - name: region
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['East','West','North','South']
+                config:
+                  store_failures: true
+                  schema: error
